@@ -1,0 +1,63 @@
+# Header
+menu:
+- slug: home
+  name: Home
+  icon: line-home
+  color: teal
+  path: /
+- slug: rss
+  name: Subscribe
+  icon: feed
+  color: orange
+  path: /atom.xml
+- slug: tag
+  name: All Tags
+  icon: tag
+  color: red
+  path: /tags
+- slug: archives
+  name: Archives
+  icon: box
+  color: blue
+  path: /archives
+
+# Sidebar
+widgets:
+- category
+- recent_posts
+- archive
+
+# search
+search_enable: true
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+author_url: http://artifact.me
+
+# use url, not username
+social:
+- name: email
+  url: mailto:i@artifact.me
+- name: github
+  url: https://github.com/artchen
+- name: twitter
+  url: https://twitter.com/otakism
+- name: google
+  url: https://plus.google.com/+ArtChenOtakism/posts
+- name: facebook
+  url: # https://www.facebook.com/zanchoret
+- name: linkedin
+  url: # https://www.linkedin.com/in/buzun
+- name: weibo
+  url: # http://weibo.com/otakism/
+- name: tumblr
+  url: # http://artchen.tumblr.com
+- name: dribbble
+  url: # https://dribbble.com/artchen
+- name: pinterest
+  url: # https://www.pinterest.com/otakism/
+- name: instagram
+  url: # https://instagram.com/otakism/
+- name: behance
+  url: # https://www.behance.net/artchen

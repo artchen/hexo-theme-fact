@@ -1,0 +1,70 @@
+<div class="main-column clearfix">
+  <div class="post-list white-box">
+    <div class="post-list-header">
+      <div class="popular-tags">
+        <% if (site.tags.length > 0) { %>
+        <%- list_tags(site.tags, {
+            show_count: false,
+            style: "list",
+            amount: 10
+          }) %>
+        <% } else { %>
+          <span class="no-tag">No popular tags</span>
+        <% } %>
+      </div>
+      <div class="navigation">
+        <a href="/">Home</a>
+
+        <% if (type === "index") { %>
+          <span class="divider">/</span>
+          <span class="text">Post List</span>
+
+        <% } else if (type === "tag") { %>
+          <span class="divider">/</span>
+          <a href="/tags">Tags</a>
+          <span class="divider">/</span>
+          <span class="text"><%= page.tag %></span>
+
+        <% } else if (type === "category") { %>
+          <span class="divider">/</span>
+          <a href="/categories">Categories</a>
+          <span class="divider">/</span>
+          <span class="text"><%= page.category %></span>
+
+        <% } else if (type === "archive") { %>
+          <span class="divider">/</span>
+          <a href="/archives">Archives</a>
+
+          <% if (is_year()) { %>
+            <span class="divider">/</span>
+            <span class="text"><%= page.year %></span>
+          <% } %>
+
+          <% if (is_month()) { %>
+            <span class="divider">/</span>
+            <span class="text"><%= page.month %></span>
+          <% } %>
+        <% } %>
+      </div>
+    </div>
+    <ul>
+    <% page.posts.each(function(post){ %>
+      <%- partial('post', {post: post}) %>
+    <% }) %>
+    </ul>
+    <footer class="post-list-footer">
+    <% if (page.total > 1){ %>
+      <nav id="page-nav">
+        <%- paginator({
+          prev_text: 'Prev',
+          next_text: 'Next'
+        }) %>
+      </nav>
+    <% } %>
+    <a class="rss" href="/atom.xml">
+      <span class="icon icon-feed-sqround"></span>
+    </a>
+    </footer>
+  </div>
+</div>
+<%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>

@@ -1,0 +1,12 @@
+<nav class="site-menu">
+  <ul>
+    <% theme.menu.forEach(function(item, key) {  %>
+    <li>
+      <a href="<%= item.path ? item.path : '/' %>" class="artifact_btn sm <%= item.color %>">
+        <span class="icon icon-<%= item.icon %>"></span>
+        <span class="name"><%= item.name %></span>
+      </a>
+    </li>
+    <% }); %>
+  </ul>
+</nav>

@@ -1,0 +1,95 @@
+/**
+ * Site header
+ */
+.site-header {
+	position: relative;
+	width: 100%;
+	line-height: 1;
+	overflow: hidden;
+	user-select: none;
+	box-shadow: 0px 3px 4px rgba(0,0,0,0.08);
+
+	.header-bar {
+		position: relative;
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+		background: $white;
+	}
+	.site-nav-switch {
+		position: absolute;
+		top: 18px;
+		left: 20px;
+	}
+	.site-bio-switch {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		border: none;
+		background: transparent;
+
+		&.active {
+			color: darken($accent-color, 10%);
+		}
+		.icon {
+			font-size: 24px;
+		}
+	}
+	.site-title {
+    position: relative;
+    font-size: 32px;
+    font-weight: normal;
+		font-family: $logo-font-family;
+		cursor: pointer;
+    overflow: hidden;
+
+		.site-brand.light {
+			font-weight: 600;
+			text-transform: capitalize;
+			margin-right: -1px;
+		}
+    .site-brand.dark {
+      position: relative;
+			background: url(/css/images/classy_fabric_@2X.png) repeat;
+			background-size: 102px 102px;
+			display: inline-block;
+	    vertical-align: baseline;
+			border-radius: 3px;
+			padding: 8px 10px 0px 10px;
+      z-index: 2;
+			color: $white;
+      transition: all 0s;
+    }
+	}
+}
+
+/**
+ *	Site Menu
+ */
+
+.site-menu {
+	position: relative;
+	width: 100%;
+	max-height: 0px;
+	overflow: hidden;
+	border-top: 1px dotted transparent;
+	background: lighten($black, 72%);
+	transition: max-height 0.25s ease-out;
+
+	&.show {
+		max-height: 150px;
+		transition: max-height 0.25s ease-in;
+		border-top-color: #ddd;
+	}
+	ul {
+		list-style: none;
+		margin: 0px;
+		padding: 10px;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			padding: 5px;
+		}
+	}
+}

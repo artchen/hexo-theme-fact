@@ -1,0 +1,10 @@
+<% if (site.tags.length){ %>
+  <div class="widget-wrap white-box tag">
+    <h3 class="widget-title">Popular Tags</h3>
+    <div class="widget">
+      <%- list_tags({
+        amount: 10
+      }) %>
+    </div>
+  </div>
+<% } %>

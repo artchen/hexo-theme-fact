@@ -1,0 +1,51 @@
+<div class="site-bio">
+
+  <!-- About Me -->
+  <div class="about-me clearfix">
+    <div class="avatar">
+      <img src="/css/images/avatar.png" />
+    </div>
+    <div class="info">
+      <a class="name dark-btn" href="/about">
+        <%- config.author %>
+      </a>
+    </div>
+    <div class="info">
+      <span class="item desc">
+        <%- config.description %>
+      </span>
+    </div>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="social clearfix">
+    <% if (theme.social) { %>
+      <% theme.social.forEach(function(value, key) {
+           if (value.url && value.name) { %>
+        <a href="<%= value.url %>" class="<%= value.name %>"
+          target="_blank" rel="external">
+          <span class="icon icon-<%= value.name %>"></span>
+        </a>
+      <% } }); %>
+    <% } %>
+  </div>
+
+  <!-- Home & Bottom -->
+  <div class="shortcuts clearfix">
+    <div class="bk">
+      <a href="#header" class="dark-btn window-nav">
+        <span class="icon icon-chevron-up"></span>
+        <span class="text">Back to Top</span>
+      </a>
+    </div>
+    <div class="bk">
+      <a href="#footer" class="dark-btn window-nav">
+        <span class="icon icon-chevron-down"></span>
+        <span class="text">Go to Bottom</span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</div>

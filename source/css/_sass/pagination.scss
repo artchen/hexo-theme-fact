@@ -1,0 +1,47 @@
+/**
+ *  Pagination
+ */
+.post-list-footer {
+  position: relative;
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  min-height: 50px;
+  border-top: 1px solid #ddd;
+  background: #F9F9F9;
+
+  .rss {
+    display: inline-block;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -10px;
+    color: $material-orange;
+    line-height: 20px;
+
+    &:hover {
+      color: lighten($black, 40%);
+    }
+  }
+}
+#page-nav {
+  position: relative;
+
+  .page-number,
+  .extend {
+    display: inline-block;
+    line-height: 32px;
+    font-size: 14px;
+    margin: 5px 3px;
+    vertical-align: middle;
+    text-align: center;
+  }
+  .page-number {
+    width: 32px;
+    padding: 0px 5px;
+    overflow: hidden;
+  }
+  .extend {
+    padding: 0px 10px;
+  }
+}

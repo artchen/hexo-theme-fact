@@ -1,0 +1,92 @@
+$button-width: 24px;
+$button-height: 24px;
+$bar-thickness: 3px;
+$button-pad: 0px;
+$button-bar-space: 7px;
+$button-transistion-duration: 0.24s;
+
+.svg-anime-icon {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: $button-width;
+  height: $button-height;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background $button-transistion-duration;
+  -webkit-transform: translateZ(0px);
+
+  &:focus {
+    outline: none;
+  }
+  span {
+    display: block;
+    position: absolute;
+    left: $button-pad;
+    right: $button-pad;
+    height: $bar-thickness;
+    background: $black;
+
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: $bar-thickness;
+      background-color: $black;
+      content: "";
+    }
+    &:before {
+      top: -$button-bar-space;
+    }
+    &:after {
+      bottom: -$button-bar-space;
+    }
+  }
+}
+
+.svg-anime-icon.icon-menu-cross {
+  background-color: transparent;
+
+  &.active {
+    background-color: transparent;
+
+    span {
+      background: none;
+
+      &:before {
+        top: 0;
+        transform: rotate(45deg);
+        transition-delay: 0s, $button-transistion-duration;
+      }
+      &:after {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition-delay: 0s, $button-transistion-duration;
+      }
+    }
+  }
+  span {
+    transition: background 0s $button-transistion-duration;
+
+    &:before {
+      transition-property: top, transform;
+    }
+    &:after {
+      transition-property: bottom, transform;
+    }
+    &:before,
+    &:after {
+      transition-duration: $button-transistion-duration, $button-transistion-duration;
+      transition-delay: $button-transistion-duration, 0s;
+    }
+  }
+}

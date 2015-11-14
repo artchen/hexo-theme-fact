@@ -1,0 +1,134 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?irzeyl');
+	src:url('fonts/icomoon.eot?irzeyl#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?irzeyl') format('truetype'),
+		url('fonts/icomoon.woff?irzeyl') format('woff'),
+		url('fonts/icomoon.svg?irzeyl#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-more:before {
+	content: "\ec67";
+}
+.icon-feed:before {
+	content: "\eef0";
+}
+.icon-feed-sqround:before {
+	content: "\eef1";
+}
+.icon-creative-commons:before {
+	content: "\e900";
+}
+.icon-chevron-down:before {
+	content: "\e914";
+}
+.icon-chevron-thin-down:before {
+	content: "\e901";
+}
+.icon-chevron-thin-left:before {
+	content: "\e902";
+}
+.icon-chevron-thin-right:before {
+	content: "\e903";
+}
+.icon-chevron-thin-up:before {
+	content: "\e904";
+}
+.icon-chevron-up:before {
+	content: "\e905";
+}
+.icon-email:before {
+	content: "\e917";
+}
+.icon-home:before {
+	content: "\e915";
+}
+.icon-list:before {
+	content: "\e924";
+}
+.icon-quote:before {
+	content: "\e918";
+}
+.icon-rss:before {
+	content: "\e906";
+}
+.icon-share:before {
+	content: "\e907";
+}
+.icon-v-card:before {
+	content: "\e923";
+}
+.icon-behance:before {
+	content: "\e91a";
+}
+.icon-weibo:before {
+	content: "\e90a";
+}
+.icon-dribbble:before {
+	content: "\e90b";
+}
+.icon-facebook:before {
+	content: "\e90c";
+}
+.icon-github:before {
+	content: "\e90d";
+}
+.icon-google:before {
+	content: "\e90e";
+}
+.icon-instagram:before {
+	content: "\e90f";
+}
+.icon-linkedin:before {
+	content: "\e910";
+}
+.icon-pinterest:before {
+	content: "\e911";
+}
+.icon-tumblr:before {
+	content: "\e912";
+}
+.icon-twitter:before {
+	content: "\e913";
+}
+.icon-box:before {
+	content: "\e909";
+}
+.icon-search:before {
+	content: "\e91b";
+}
+.icon-trash:before {
+	content: "\e91c";
+}
+.icon-bubble:before {
+	content: "\e908";
+}
+.icon-folder:before {
+	content: "\e91e";
+}
+.icon-tag:before {
+	content: "\e920";
+}
+.icon-eye:before {
+	content: "\e921";
+}
+.icon-line-home:before {
+	content: "\e922";
+}
+

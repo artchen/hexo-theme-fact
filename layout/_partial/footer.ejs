@@ -1,0 +1,17 @@
+
+<% if (theme.search_enable === true) { %>
+<div class="search">
+  <form name="searchform" id="searchform">
+    <input type="text" id="search_input" class="search_input st-default-search-input"
+      data-list-highlight="true" data-list-value-completion="true" placeholder="Type some search text" />
+    <button type="submit" class="search-bar-trigger">
+      <span class="icon icon-search"></span>
+    </button>
+  </form>
+</div>
+<% } %>
+
+<footer id="footer" class="clearfix">
+  <div class="right">&copy; <a href="<%= theme.author_url %>"><%= config.title %></a> Theme by <a href="http://artifact.me/" target="_blank">Art Chen</a>.</div>
+  <div class="left">Powered by <a href="https://hexo.io/" rel="external" target="_blank">Hexo</a>.</div>
+</footer>

@@ -1,0 +1,81 @@
+.artifact_btn,
+#page-nav .page-number,
+#page-nav .extend {
+  display: inline-block;
+  border: 1px solid lighten($black, 64%);
+  border-radius: 2px;
+  background: $white;
+  line-height: 32px;
+  vertical-align: middle;
+  padding: 3px 10px 0px 10px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.08);
+  font-size: 14px;
+  color: lighten($black, 20%);
+  cursor: pointer;
+
+  &:hover {
+    border-color: lighten($black, 48%);
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+  }
+  &:active {
+    border-color: lighten($black, 54%);
+    background-color: lighten($black, 64%);
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.08), inset 0px 1px 2px rgba(0,0,0,0.08);
+  }
+  &.sm {
+    line-height: 30px;
+    font-size: 13px;
+    padding-top: 1px;
+
+    .icon {
+      font-size: 14px;
+    }
+  }
+  &.red:hover .icon {
+    color: $material-red;
+  }
+  &.blue:hover .icon {
+    color: $material-blue;
+  }
+  &.orange:hover .icon {
+    color: $material-orange;
+  }
+  &.green:hover .icon {
+    color: $material-green;
+  }
+  &.teal:hover .icon {
+    color: $material-teal;
+  }
+  .icon {
+    position: relative;
+    font-size: 16px;
+    margin-right: 3px;
+    top: 1px;
+  }
+}
+
+.dark-btn {
+  display: inline-block;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid black;
+  padding: 0px 15px;
+  font-size: 13px;
+  font-family: $base-font-family;
+  text-align: center;
+  color: lighten(#8f8f8f, 20%);
+
+  &:hover {
+    color: lighten(#8f8f8f, 40%);
+    background-color: $brand-color;
+  }
+  .icon {
+    margin-right: 5px;
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 44px;
+  }
+  .text {
+    vertical-align: middle;
+    line-height: 44px;
+  }
+}

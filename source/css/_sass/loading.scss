@@ -1,0 +1,18 @@
+/**
+ *  Loading bar
+ */
+#loading-bar-wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  z-index: 999;
+}
+#loading-bar {
+  position: relative;
+  width: 0;
+  height: 2px;
+  background-color: rgba(lighten($accent-color, 2%), 0.8);
+  transition: all 0.5s ease;
+}
