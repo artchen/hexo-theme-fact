@@ -147,6 +147,9 @@ a {
 body.bio-open {
 	overflow: hidden;
 
+	.site-bio {
+		transform: translate3d(0, 0, 0);
+	}
 	.site-wrapper {
 		transform: translate3d(-280px, 0, 0);
 

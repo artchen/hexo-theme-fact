@@ -69,16 +69,18 @@
 
 .site-menu {
 	position: relative;
+	display: none;
 	width: 100%;
-	max-height: 0px;
+	//max-height: 0px;
 	overflow: hidden;
 	border-top: 1px dotted transparent;
 	background: lighten($black, 72%);
-	transition: max-height 0.25s ease-out;
+	transition: all 0.25s ease-out;
 
 	&.show {
-		max-height: 150px;
-		transition: max-height 0.25s ease-in;
+		//max-height: 150px;
+		// transition: max-height 0.25s ease-in;
+		display: block;
 		border-top-color: #ddd;
 	}
 	ul {

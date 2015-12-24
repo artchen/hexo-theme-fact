@@ -27,6 +27,15 @@
     color: lighten($black, 40%);
     margin: 0px;
     font-family: $base-font-family;
+
+    .more {
+      cursor: pointer;
+      color: lighten($black, 40%);
+
+      &:hover {
+        color: lighten($black, 20%);
+      }
+    }
   }
   .widget {
 

@@ -13,6 +13,8 @@
   background-size: 102px 102px;
   text-align: center;
   overflow: hidden;
+	transform: translate3d(280px, 0, 0);
+	transition: all 0.24s ease;
   z-index: 1;
 
   .shortcuts {

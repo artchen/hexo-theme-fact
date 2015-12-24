@@ -1,6 +1,11 @@
 <% if (site.categories.length){ %>
   <div class="widget-wrap white-box category">
-    <h3 class="widget-title">Categories</h3>
+    <h3 class="widget-title clearfix">
+      <span>Categories<span>
+      <a href="/categories" class="more right">
+        <span class="icon icon-more2"></span>
+      </a>
+    </h3>
     <div class="widget">
       <%- list_categories({
         show_count: true,

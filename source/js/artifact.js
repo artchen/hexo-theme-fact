@@ -76,12 +76,15 @@
   $(window).scroll(function() {
     var article_header = $(".article-navigation-header"),
         article_header_navigation = $(".article-navigation-header .navigation");
-    if (window.scrollY > article_header.offset().top) {
-      article_header_navigation.addClass('sticky');
+    if (article_header.length > 0) {
+      if (window.scrollY > article_header.offset().top) {
+        article_header_navigation.addClass('sticky');
+      }
+      else {
+        article_header_navigation.removeClass('sticky');
+      }
     }
-    else {
-      article_header_navigation.removeClass('sticky');
-    }
+
   });
 
 })(jQuery);

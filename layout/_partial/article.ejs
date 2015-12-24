@@ -8,8 +8,10 @@
         <div class="navigation-content-wrapper">
           <a href="/">Home</a>
           <span class="divider">/</span>
+          <% if (post.type !== 'tags' && post.type !== 'categories') { %>
           <span class="grey">Posts</span>
           <span class="divider">/</span>
+          <% } %>
           <a href="<%= post.link %>"><%= post.title %></a>
           <% if (post.comments && config.disqus_shortname){ %>
           <a class="go-comment icon-btn" href="#comments"><span class="icon icon-bubble"></span></a>

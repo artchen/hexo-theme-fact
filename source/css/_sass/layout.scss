@@ -52,14 +52,14 @@
 
     & > li {
       position: relative;
-      padding: 10px 80px 10px 15px;
+      padding: 10px 15px 10px 15px;
       margin: 0px;
       border-top: 1px solid #ddd;
 
       .post-image {
         position: absolute;
         top: 10px;
-        right: 15px;
+        right: 10px;
         border-radius: 6px;
         width: 54px;
         height: 54px;
@@ -82,6 +82,7 @@
         }
       }
       .post-title {
+        padding-right: 60px;
 
         h3 {
           font-size: 22px;
@@ -98,10 +99,42 @@
         }
       }
       .post-excerpt {
-        font-size: 13px;
-        color: lighten($black, 30%);
+        font-size: 16px;
+        padding: 15px 0px 10px 0px;
+        color: lighten($black, 10%);
+
+        .post-tools {
+
+          .read-more {
+            margin: 0px auto;
+            font-size: 14px;
+            font-family: $base-font-family;
+            color: lighten($black, 20%);
+            background: $white;
+
+            &:visited {
+              color: lighten($black, 20%);
+              background: $white;
+            }
+            &:hover {
+              border-color: lighten($black, 48%);
+              box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+              color: lighten($black, 10%);
+              background: $white;
+            }
+            &:active {
+              border-color: lighten($black, 54%);
+              background-color: lighten($black, 64%);
+              box-shadow: 0px 0px 1px rgba(0,0,0,0.08), inset 0px 1px 2px rgba(0,0,0,0.08);
+            }
+          }
+        }
+        p {
+          margin-bottom: 10px;
+        }
       }
       .post-meta {
+        padding-right: 60px;
         font-family: $base-font-family;
 
         a:hover {

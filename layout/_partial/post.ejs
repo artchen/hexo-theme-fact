@@ -6,9 +6,6 @@
       <% } %>
     </h3>
   </div>
-  <div class="post-excerpt">
-    <%- post.excerpt %>
-  </div>
   <div class="post-meta">
     <div class="post-time">
       <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished">
@@ -27,19 +24,35 @@
       Uncategorized
       <% } %>
     </div>
-    <div class="post-tags">
-      <span class="icon-tag icon"></span>
-      <% if (post.tags.length > 0) {  %>
-      <%- list_tags(post.tags, {
-        show_count: false,
-        style: 'none',
-        class: 'post-tag',
-        separator: ', '
-      }) %>
-      <% } else { %>
-      <span class="no-tag">tagless</span>
-      <% } %>
+  </div>
+
+  <div class="post-excerpt">
+    <% if (post.excerpt) { %>
+      <%- post.excerpt %>
+    <% } else { %>
+      <%- post.content %>
+    <% } %>
+
+    <div class="post-tools clearfix">
+      <a href="<%- url_for(post.path) %>" class="right artifact_btn sm read-more">
+        <span class="icon icon-eye"></span>
+        <span class="text">Read More</span>
+      </a>
     </div>
+  </div>
+
+  <div class="post-tags">
+    <span class="icon-tag icon"></span>
+    <% if (post.tags.length > 0) {  %>
+    <%- list_tags(post.tags, {
+      show_count: false,
+      style: 'none',
+      class: 'post-tag',
+      separator: ', '
+    }) %>
+    <% } else { %>
+    <span class="no-tag">tagless</span>
+    <% } %>
   </div>
   <div class="post-image">
     <% if (post.image) { %>
