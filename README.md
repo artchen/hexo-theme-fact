@@ -1,4 +1,4 @@
-# hexo-theme-artifact-flat
+# hexo-theme-artifact
 
 A simple and clean Hexo blogging theme inspired by [V2EX](http://v2ex.com/).
 
