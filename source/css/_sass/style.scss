@@ -1,10 +1,11 @@
 @charset "utf-8";
 
 // Font families
-$article-font-family: "freight-text-pro", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
-$logo-font-family: "garamond-premier-pro", Helvetica, Arial, serif;
-$base-font-family: "calluna-sans", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
-$code-font-family: "source-code-pro", monospace, sans-serif;
+$fallback-font-family: Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", Microsoft JhengHei, WenQuanYi Micro Hei, "Microsoft YaHei", sans-serif;
+$article-font-family: "futura-pt", $fallback-font-family;
+$base-font-family: "futura-pt", $fallback-font-family;
+$logo-font-family: "adobe-garamond-pro", $fallback-font-family;
+$code-font-family: "inconsolata", Consolas, monospace, sans-serif;
 
 // Font configuration
 $base-font-size:   16px;

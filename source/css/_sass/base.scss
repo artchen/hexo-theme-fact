@@ -50,23 +50,23 @@ h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2em;
-}
-
-h2 {
   font-size: 1.8em;
 }
 
-h3 {
+h2 {
   font-size: 1.6em;
 }
 
-h4 {
+h3 {
   font-size: 1.4em;
 }
 
-h5 {
+h4 {
   font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1.1em;
 }
 
 h6 {
@@ -145,7 +145,7 @@ a {
 }
 
 body.bio-open {
-	overflow: hidden;
+	//overflow: hidden;
 
 	.site-bio {
 		transform: translate3d(0, 0, 0);
