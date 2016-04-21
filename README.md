@@ -8,7 +8,7 @@ I assume you already have a Hexo blog initialized.
 
 ```bash
 cd <path-to-hexo-folder>/themes
-git clone git@github.com:artchen/hexo-theme-fact.git fact
+git clone https://github.com/artchen/hexo-theme-fact.git fact
 ```
 
 Don't forget to modify `_config.yml` under root directory of Hexo blog. Change theme to Fact.
